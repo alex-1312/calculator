@@ -13,27 +13,27 @@
     .display{grid-area: display;}
     .clear{grid-area: clear;}
     .delete-digit{grid-area: delete;}
-    .number-9{grid-area: nine;}
-    .number-8{grid-area: eight;}
-    .number-7{grid-area: seven;}
-    .number-6{grid-area: six;}
-    .number-5{grid-area: five;}
-    .number-4{grid-area: four;}
-    .number-3{grid-area: three;}
-    .number-2{grid-area: two;}
-    .number-1{grid-area: one;}
-    .number-0{grid-area: null;}
-    .add{grid-area: addition;}
-    .sub{grid-area: subtraction;}
-    .div{grid-area: division;}
-    .mul{grid-area: multiplication;}
+    #number-9{grid-area: nine;}
+    #number-8{grid-area: eight;}
+    #number-7{grid-area: seven;}
+    #number-6{grid-area: six;}
+    #number-5{grid-area: five;}
+    #number-4{grid-area: four;}
+    #number-3{grid-area: three;}
+    #number-2{grid-area: two;}
+    #number-1{grid-area: one;}
+    #number-0{grid-area: null;}
+    #add{grid-area: addition;}
+    #sub{grid-area: subtraction;}
+    #div{grid-area: division;}
+    #mul{grid-area: multiplication;}
     .dec{grid-area: decimals;}
     .equals{grid-area: equals;}
     /* GRID-TEMPLATE */
     .grid-container{
-      border-radius: 10px;
+      border-radius: 10px;      
       border: 5px ridge black;
-      background: yellow;
+      background: black;
       padding: 20px;
       width: 500px;
       margin-left: auto;
@@ -56,7 +56,17 @@
     }
 
     /* TEST */
-    .display p{text-align: right;}
+    .display p{
+      height: 80px;
+      line-height: 80px;;
+      text-align: right;
+      background: grey;
+      color: white;
+      font-size: 30px;
+      font-weight: bolder;
+      padding: 0 10px;
+      margin: 0;
+    }
 
   </style>
 
@@ -70,29 +80,29 @@
   <div class="grid-container">
     <!-- DISPLAY -->
     <div class="display">
-      <p>0123456789</p>
-      <p>0123456789</p>
+      <!-- <p></p> -->
+      <p>0</p>
     </div>
     <!-- DELETE -->
     <button class="clear">Clear</button>
     <!-- DELETE DIGIT -->
     <button class="delete-digit">Del</button>
     <!-- NUMBERS -->
-    <button class="number number-0">0</button>
-    <button class="number number-1">1</button>
-    <button class="number number-2">2</button>
-    <button class="number number-3">3</button>
-    <button class="number number-4">4</button>
-    <button class="number number-5">5</button>
-    <button class="number number-6">6</button>
-    <button class="number number-7">7</button>
-    <button class="number number-8">8</button>
-    <button class="number number-9">9</button>
+    <button class="number" id="number-0">0</button>
+    <button class="number" id="number-1">1</button>
+    <button class="number" id="number-2">2</button>
+    <button class="number" id="number-3">3</button>
+    <button class="number" id="number-4">4</button>
+    <button class="number" id="number-5">5</button>
+    <button class="number" id="number-6">6</button>
+    <button class="number" id="number-7">7</button>
+    <button class="number" id="number-8">8</button>
+    <button class="number" id="number-9">9</button>
     <!-- OPERATORS -->
-    <button class="operators add">+</button>
-    <button class="operators sub">-</button>
-    <button class="operators div">/</button>
-    <button class="operators mul">*</button>
+    <button class="operators" id="add">+</button>
+    <button class="operators" id="sub">-</button>
+    <button class="operators" id="div">/</button>
+    <button class="operators" id="mul">*</button>
     <!-- DEC -->
     <button class="dec">.</button>
     <!-- EQUALS -->
